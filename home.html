@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="M_Adnan">
+    <title>IAL-USA</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/ionicons.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homeform.css">
+    <link rel="stylesheet" href="css/style_upcoming.css">
+
+    <!-- Online Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,800,200,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600italic,400italic,300,300italic,600,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- COLORS -->
+    <link rel="stylesheet" id="color" href="css/colors/default.css">
+
+    <!-- JavaScripts -->
+    <script src="js/modernizr.js"></script>
+    
+    
+    <style>
+    
+    
+        
+        
+.section {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "main main"
+    "event event";
+  background-image: url(https://s3.ca-central-1.amazonaws.com/image-web-frankie/Music+show.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+@media (min-width: 1200px) {
+  .section {
+    grid-template-areas:
+      "main event"
+      "main event";
+  }
+}
+
+.leftBox {
+  grid-area: main;
+  /*padding: 50px;*/
+  box-sizing: border-box;
+}
+
+.section .leftBox .content {
+  color: #fff;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.section .leftBox .content:hover {
+  /*background-color: #6c2e37;*/
+}
+
+.section .leftBox .content h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.section .leftBox .content p {
+  margin: 10px 0 0;
+  padding: 0;
+}
+.para{
+      background-color: #6c2e37;
+      padding:10px 20px 10px 20px;
+}
+
+.section .events {
+  grid-area: event;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  box-sizing: border-box;
+}
+
+. .events ul {
+  margin: 0;
+  padding: 40px;
+  list-style: none;
+}
+
+.section .events ul li {
+  background-color: #fff;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0;
+  grid-template-areas:
+    "time time"
+    "detail detail";
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .section .events ul li {
+    grid-template-areas:
+      "time detail"
+      "time detail";
+  }
+}
+
+.section .events ul li .time {
+  grid-area: time;
+  position: relative;
+  padding: 8% 40%;
+  background-color: #262626;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.section .events ul li:hover .time {
+  background-color: #6c2e37;
+}
+
+.section .events ul li .time h2 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 60px;
+  line-height: 30px;
+}
+
+.section .events ul li .time h2 span {
+  font-size: 30px;
+}
+
+.section .events ul li .details {
+  grid-area: detail;
+  padding: 20px 20px 32px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.section .events ul li .details h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+.section .events ul li .details p {
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.section .events ul li .details a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 2px solid #262626;
+  margin-top: 16px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.section .events ul li .details a:hover {
+  background-color: #6c2e37;
+  color: #fff;
+  border-color: #e91e63;
+}
+
+.slide-img-4{
+    background:;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Wrap -->
+    <div id="wrap">
+
+        <!-- header -->
+        <header id="main-header">
+
+        </header>
+
+        <!-- HOME MAIN SLIDER -->
+        <section class="home-slide">
+            <ul class="slides">
+
+                <!-- SLIDER 1 -->
+                <li class="slide-img-1" data-stellar-background-ratio="0.3">
+                    <div class="position-center-center">
+                        <h1>Let's build bridges<br>
+                            Through cultural & Public diplomacy</h1>
+                </li>
+
+                <!-- SLIDER 2 -->
+                <li class="slide-img-2" data-stellar-background-ratio="0.3">
+                    <div class="position-center-center">
+                        <h1>Let's build bridges<br>
+                            Through cultural & Public diplomacy</h1>
+                 </li>
+                 <!-- SLIDER 3 -->
+                 <li class="slide-img-3" data-stellar-background-ratio="0.3">
+                    <div class="position-center-center">
+                        <h1>Let's build bridges<br>
+                            Through cultural & Public diplomacy</h1>
+                </li>
+                 <!-- SLIDER 1 -->
+                <li class="slide-img-4" data-stellar-background-ratio="0.3">
+                    <div class="position-center-center">
+                        <h1>Let's build bridges<br>
+                            Through cultural & Public diplomacy</h1>
+                </li>
+
+                <!-- SLIDER 2 -->
+                <li class="slide-img-5" data-stellar-background-ratio="0.3">
+                    <div class="position-center-center">
+                        <h1>Let's build bridges<br>
+                            Through cultural & Public diplomacy</h1>
+                 </li>
+                 <!-- SLIDER 3 -->
+                 <li class="slide-img-6" data-stellar-background-ratio="0.3">
+                    <div class="position-center-center">
+                        <h1>Let's build bridges<br>
+                            Through cultural & Public diplomacy</h1>
+                </li>
+                
+               
+               
+            </ul>
+        </section>
+
+        <!-- Content -->
+        <div id="content">
+
+             <!-- Testi -->
+             <section class="testi-bg padding-top-100 padding-bottom-100">
+                <div class="container">
+                     <!-- Heading -->
+                     <div class="heading text-center">
+                        <h1>About IAL USA</h1>
+                    </div>
+                    <div class="testi">
+                        <!--<h4></h4>-->
+                    <p>Founded in 2017,International Academy of Letters USA, is a U.S. based not-for-profit and non- governmental think tank organization committed to promoting cultural and public diplomacy through dialogue. It works to achieve global peace by strengthening intercultural relations among nations, countries, communities and people.</p>                        
+                    
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICES -->
+            <section class="services padding-top-70 padding-bottom-70" id="services-sec">
+                <div class="container">
+                   
+                </div>
+                <div class="best-services">
+                    <!-- Row -->
+                    <div class="container">
+                        <ul class="row list">
+                            <!-- Analytics -->
+
+                             <!-- Worth -->
+                             <li class="col-md-4" data-content="#colio_c1" >
+                                <article class="thumb"><a class="button colio-link" href="#"> <i class="fa fa-rocket"></i>
+                <h5>Our Principles</h5>
+                </a> </article>
+                            </li>
+
+                             <!-- Worth -->
+                             <li class="col-md-4" data-content="#colio_c6">
+                                <article class="thumb"><a class="button colio-link lower" href="#"> <i class="fa fa-bullhorn"></i>
+                <h5>AREAS OF WORK</h5>
+                </a> </article>
+                            </li>
+
+                            <li class="col-md-4" data-content="#colio_c4">
+                                <article class="thumb"> <a class="button colio-link" href="#"> <i class="fa fa-bar-chart"></i>
+                <h5>Mission                </h5>
+                </a> </article>
+                            </li>
+
+                            <!-- Storage -->
+                            <li class="col-md-4" data-content="#colio_c2">
+                                <article class="thumb"><a class="button colio-link" href="#"> <i class="fa fa-archive"></i>
+                <h5>Objectives</h5>
+                </a> </article>
+                            </li>
+
+                            <!-- Security -->
+                            <li class="col-md-4" data-content="#colio_c3">
+                                <article class="thumb"><a class="button colio-link" href="#"> <i class="fa fa-shield"></i>
+                <h5>Diplomacy</h5>
+                </a> </article>
+                            </li>
+
+                           
+
+                            <!-- Worth -->
+                            <li class="col-md-4" data-content="#colio_c5">
+                                <article class="thumb"><a class="button colio-link lower" href="#"> <i class="fa fa-comments-o"></i>
+                <h5>Our Work</h5>
+                </a> </article>
+                            </li>
+
+                           
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Analytics Tab Open -->
+                <!-- Analytics Tab Open -->
+                <div id="colio_c1" class="colio-content">
+                    <div class="main">
+                        <div class="container">
+                            <div class="inside-colio">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <!-- Heading -->
+                                        <div class="heading text-left margin-bottom-40">
+                                            <h4>Our Principles</h4>
+                                        </div>
+                                        <ul class="obj-li">
+                                            <li>Build bridges through public and cultural diplomacy</li>
+                                            <li>People to people contact and culture to culture relationship</li>
+                                            <li>Pursuance of harmony and global peace through dialogue</li>
+                                            <li>Bridging divides and fostering global unity through cultural exchange and collaboration</li>
+                                            <li>Facilitating intercultural dialogue and cooperation for a more peaceful and interconnected world</li>
+                                        </ul>
+                                        
+                                        <a href="contact.html" class="btn btn-1 margin-top-30 margin-right-20">Contact Now <i class="fa fa-caret-right"></i></a>  </div>
+                                    <div class="col-md-4 text-right"> <img class="img-responsive" src="images/mission2.jpg" alt=""> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="colio_c4" class="colio-content">
+                    <div class="main">
+                        <div class="container">
+                            <div class="inside-colio">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <!-- Heading -->
+                                        <div class="heading text-left margin-bottom-40">
+                                            <h2>Our Mission</h2>
+                                        </div>
+                                        <p> <strong> Increase understanding and bridge communication gap among nations, countries, communities and people through public and cultural diplomacy. </strong> </p>
+                                        
+                                        <h2>IAL USA Principles</h2>
+                                        <h3>Communities are ONE</h3>
+                                        <p>At IAL USA we are working together to bring communities closer and work towards our objectives collectively</p>
+                                    
+                                        <ul class="row">
+
+                                            <div class="col-md-6">
+                                            <li><h4>Relationships</h4></li>
+                                            <li>People to people contact and culture to culture relationships</li>
+                                            <li><h4>Respect</h4></li>
+                                            <li>Respect and Recognition of cultural diversity</li>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                            <li><h4>Dialogue</h4></li>
+                                            <li>Global intercultural dialogue</li>
+                                            <li><h4>Peace</h4></li>
+                                            <li>Pursuance of global peace and protection of human rights</li>
+                                            </div>
+                                        </ul>
+
+                                        <a href="contact.html" class="btn btn-1 margin-top-30 margin-right-20">Contact Now <i class="fa fa-caret-right"></i></a> 
+                                    
+                                        
+                                    </div>
+                                    <div class="col-md-5 text-right"> <img class="img-responsive" src="images/mission.jpg" alt=""> </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Storage Tab Open -->
+                <div id="colio_c2" class="colio-content">
+                    <div class="main">
+                        <div class="container">
+                            <div class="inside-colio">
+                                <div class="row">
+                                    
+                                
+                                <div class="col-md-6">
+                                        <h4>Promoting Cultural Relationships</h4>
+                                            <ul class="obj-li">
+                                                <li>Explore the dialogue and interface between literature and the arts that shape our cultural, social, economic, and political frameworks.</li>
+                                                <li>Promote arts & literature and explore the interconnections between literature and art, theater, films, music, television, journalism, and political activism.</li>
+                                                <li>Undertake aid, support, assist, promote, manage, research, and encourage projects or programs related to literature, art, journalism, philosophy, and political activism that can promote peace, cohesion, integration among various communities.</li>
+                                                <li>Preserve, promote and foster study in literature, arts, music, poetry, journalism, and architecture, and to give awards, scholarships, and prizes for their encouragement.</li>
+                                                <li>Organize International Festival of Literature and Peace on an annual basis.</li>
+                                                <li>Promote, manage, organize and hold events, meetings, carnivals, festivals, lectures, seminars, workshops, discussion forums, and research related to and for the promotion of literature, poetry, journalism, cinema, cultural heritage, and promote writers, authors, philosophers, thinkers, and artists.</li>
+                                                <li>Set up libraries and study centers for promoting literature and to encourage, promote, create and manage book clubs and think tanks and work toward the development and preservation of literature, culture, and history.</li>
+                                                <li>Conserve and promote an awareness of the rich cultural heritage of Pakistan with a focus on literature, arts, music, dance, festivals, rituals, games, architecture, mythology, and philosophy.</li>
+                                        </ul>
+                                        <a href="contact.html" class="btn btn-1 margin-top-30 margin-right-20">Contact Now <i class="fa fa-caret-right"></i></a> 
+
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Literature & Peace</h4>
+                                        <ul class="obj-li">
+                                            <li>Create a platform to promote intercultural dialogue among countries and communities</li>
+                                            <li>Establish relationship, partnership and alliances with think tanks, media and academia at national and state level</li>
+                                        </ul>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                  <!-- Analytics Tab Open -->
+                  <div id="colio_c3" class="colio-content">
+                    <div class="main">
+                        <div class="container">
+                            <div class="inside-colio">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <!-- Heading -->
+                                        <div class="heading text-left margin-bottom-40">
+                                            <h2>Institute for Public Diplomacy</h2>
+                                        </div>
+                                        <p> <strong> Institute for Cultural and Public Diplomacy acts a platform to promote diplomacy. It brings academics, writers, intellectuals, diplomats and politicians from across the world to share ideas, publish research and grow networks.</strong></p>
+                                        <ul class="obj-li">
+                                            <li>This platform aims to advance public diplomacy, by combining dialogue, research, and practice in order to provide evidence-based information and guidance in the public diplomacy field. It provides a direct channel of interaction among cultural activists, media, NGOs, academics, politicians, writers, authors, and others seeking to advance the field of international virtual exchange.</li>
+                                            <li>Through our balanced public diplomacy programs and publications, the center encourages citizens to participate in the cultural and policy process.</li>
+                                            <li>The center organizes international conferences on salient issues in international relations, global economy, culture, and human rights.</li>
+                                            <li>The center pursues its objectives by interacting with public and private organizations from all parts of the world.</li>
+                                            <li>Diplomacy ecosystem, through partnerships among policymakers and civil society.</li>
+                                        </ul>
+
+                                        <div class="heading text-left margin-bottom-40">
+                                            <h3>Programs/Activities</h3>
+                                            <p>The center pursues its objectives by interacting with public and private organizations from all parts of the world and by organizing dialogues, conferences, seminars and book sessions</p>
+                                        </div>
+                                        
+                                        <a href="contact.html" class="btn btn-1 margin-top-30 margin-right-20">Contact Now <i class="fa fa-caret-right"></i></a>
+                                     </div>
+                                    <div class="col-md-4 text-right"> 
+                                        <img class="img-responsive" src="images/mission2.jpg" alt=""> 
+                                        <div class="card">
+                                            <div class="card-content">
+                                                <h5>Social Integration</h5>
+                                                <div class="social-icons">
+                                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                                                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Storage Tab Open -->
+                <div id="colio_c5" class="colio-content">
+                    <div class="main">
+                        <div class="container">
+                            <div class="inside-colio">
+                                <div class="row">
+                                    
+                                
+                                    <div class="col-md-6">
+                                        <h4>OUR PHILOSOPHY</h4>
+                                        <p>IAL USA, under the supervision of its President/CEO and the Board , works toward its stated objectives through the following means:</p>
+                                            <ul class="obj-li">
+                                                <li>By establishing and developing relations with national and international think tank organizations/institutions and by promoting and organizing cultural-exchange activities and programs with and between other states, provinces, countries and people</li>    
+                                                <li>By collaborating with writers, thinkers, academia, and professionals in relevant fields for promoting literature, poetry, culture, heritage, history, arts, theater, film, and journalism, and working for the diffusion of literature and knowledge to all or part of the public.</li>
+                                                <li>By having dialogue with with diplomats, writers, authors, thinkers and intellectuals on politics, media, books, society, literature and arts</li>
+                                                <li>By organizing Literature Festivals, conferences, seminars, Meet the Authors/Diplomats By documenting, researching, surveying and publishing books, periodicals, research papers on international affairs, cultural and public diplomacy, literature, poetry, art, theater, films, music, dance, television, journalism, cinema, cultural heritage, mythology, architecture, and philosophy.</li>
+                                            </ul>
+                                        <a href="contact.html" class="btn btn-1 margin-top-30 margin-right-20">Contact Now <i class="fa fa-caret-right"></i></a> 
+
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>WE BELIEVE IN WORKING</h4>
+                                        <ul class="obj-li">
+                                            <li>By liaising with relevant governmental agencies as well as established and well-reputed nonprofit organizations to achieve or promote the objectives stated herein.</li>
+                                            <li>By a Fund created by raising capital through donations and fundraising initiatives.</li>
+                                            <li>By establishing a Center for Cultural & Public Diplomacy, organize dialogue on different topics. This center will act as a platform for the promotion of Public & Cultural Diplomacy by engaging experts of different fields.</li>
+                                            <li>By organizing sessions with leaders, writers, diplomats, politicians, historians, authors and artists to promote cultural and public diplomacy</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div id="colio_c6" class="colio-content">
+                    <div class="main">
+                        <div class="container">
+                            <div class="inside-colio">
+                                <div class="row">
+                                    <div class="col-md-7 text-right"> <img class="img-responsive" src="images/mission.jpg"> </div>
+                                    <div class="col-md-5">
+                                        <!-- Heading -->
+                                        <div class="heading text-left margin-bottom-40">
+                                            <h4>AREAS OF WORK</h4>
+                                        </div>
+                                        <ul class="obj-li">
+                                            <li>Literature</li>
+                                            <li>Politics</li>
+                                            <li>Diplomacy</li>
+                                            <li>Book Discussion</li>
+                                            <li>Fine Arts  </li>
+                                        </ul>
+                                        
+                                        <a href="contact.html" class="btn btn-1 margin-top-30 margin-right-20">Contact Now <i class="fa fa-caret-right"></i></a>   </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Portfolio -->
+    <section class="portfolio  padding-bottom-20" >
+                <div class="container">
+                    <!-- Heading -->
+                    <div class="heading text-center">
+                     <b>   <h3 style="font-weight: bold;">Our Events</h3></b>
+                    </div>
+
+                    <!-- PORTOFLIO ITEMS FILTER -->
+                    
+                </div>
+
+
+        <style>
+    .blog-slider__content > *{opacity:1;}
+    .blog-slider__img:after{
+        background-image:none;
+    }
+    .blog-slider__img{
+        background-image:none;
+        box-shadow:4px 13px 30px 1px rgb(220 220 220 / 20%);
+    }
+    .blog-slider__img img{
+        opacity:1;
+    }
+   .blog-slider__img img:hover {
+    transform: scale(1.2);
+}
+
+    .event1, .blog-slider{
+        height:auto;
+    }
+    .event1 .blog-slider__img{
+        height:400px;
+        width:320px;
+    }
+    
+    @media screen and (min-width:800px){
+    .blog-slider{
+        width:85%;
+    }
+        
+    }
+    @media screen and (max-width:800px){
+        .event1 .blog-slider__img{height:350px;width:300px;}
+        .blog-slider{margin:20px auto;margin-bottom:7rem;}
+        .blog-slider__content{margin-bottom:1rem;}
+        .blog-slider__img{transform:translateY(-20%)}
+    }
+    
+    .event1 .para{
+        margin-bottom:2rem;
+    }
+    .blog-slider__button {
+        background:#6c2e37;
+        background-image:none;
+        box-shadow:0px 14px 20px rgb(172 172 172 / 28%);
+    }
+    
+    .blog-slider__button:hover {
+        color:grey;
+    }
+    
+   .blog-slider__text{
+       margin-bottom:15px;
+   }
+   .blog-slider__title{
+       font-size:15px;
+       font-weight:500;
+   }
+   .blog-slider__code{
+       font-size:19px;
+       letter-spacing:3px;
+        font-weight:700;
+        color:#6c2e37;
+   }
+   
+   .slider-images .owl-nav{
+       display:none!important;
+   }
+    
+    
+.carousel-events-container {
+  overflow: hidden;
+  height:auto; /* Adjust the height as needed */
+  position: relative;
+}
+
+.carousel-events {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slide-home {
+  flex: 0 0 100%; /* Full width of the carousel-events */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+.carousel-events article {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-events img {
+    margin-block:1rem;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+    
+</style>
+
+        <main class="row" style="margin:0 1rem;">
+
+<section class="event-section col-md-8" style="margin-bottom:2rem;">
+ 
+
+ <div class="blog-slider event1" style="margin-bottom:2rem;">
+    <div class="blog-slider__wrp swiper-wrapper">
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          
+          <img src="images/photofunny.net_.jpg" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">UPCOMING EVENT</span>
+          <div class="blog-slider__text">DATE: 18 JULY,2023
+                                                                                              </div>
+          <div class="blog-slider__title"> Future of Pakistan-USA Relations- a way forward</div>
+          <div class="para">
+   <h4 style="color:white;">      </h4>
+      <p style="font-size:16px;   color:white;  text-align: justify;">
+
+<b>Keynote Speakers:</b><br>
+1-Elizanmbeth Horst
+<br>Principal Deputy Assistant Secretary of State  South and Central Asia
+<br>
+2- Masood Khan<br>
+
+Pakistan’s Ambassador to the United States<br>
+
+Tuesday July 18,2023<br>
+
+<!--10.00 am-1.00 pm-->
+
+      </p></div>
+         <!-- <a href="/ialus/events.php" class="blog-slider__button blog-btn" style="margin-bottom:10px">Event Page</a>-->
+         
+        </div>
+      </div>   
+    </div>
+  </div>
+  
+<div class="blog-slider" style="margin-bottom:2rem;">
+    <div class="blog-slider__wrp swiper-wrapper">
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          
+          <img src="images/pastevents/event1.jpg" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">PAST EVENT</span>
+          <div class="blog-slider__text">DATE: 27 APRIL,2023</div>
+          <div class="blog-slider__title"> RENOWNED AMERICAN THINK TANK WILSON CENTER AND INTERNATIONAL ACADEMY OF LETTERS USA JOINTLY ORGANIZED A CONFERENCE ON THE FUTURE OF PAKISTAN-USA RELATIONS AT WILSON CENTER WANGTON D.C.</div>
+      
+          <a href="https://thealamgroup.com/ialus/events/past-events/post.php?title=2023-04-29" class="blog-slider__button blog-btn" style="margin-bottom:10px">Read More</a>
+        
+        </div>
+      </div>   
+    </div>
+  </div>
+  
+    <center><a href="events.php" class="btn btn-1 ">More Events <i class="fa fa-caret-right"></i></a></center> 
+
+</section>
+
+<section class="col-md-4 slider-images">
+
+      <div class="carousel-events-container">
+        <div class="carousel-events">
+          <div class="slide-home">
+            <article><img class="img-responsive" src="https://thealamgroup.com/ialus/images/slides/eventslider1.jpeg" alt=""></article>
+            <article><img class="img-responsive" src="https://thealamgroup.com/ialus/images/slides/eventslider2.jpeg" alt=""></article>
+            <article><img class="img-responsive" src="https://thealamgroup.com/ialus/images/slides/eventslider3.jpeg" alt=""></article>
+          </div>
+          <div class="slide-home">
+            <article><img class="img-responsive" src="https://thealamgroup.com/ialus/images/slides/slide1.jpg" alt=""></article>
+            <article><img class="img-responsive" src="https://thealamgroup.com/ialus/images/slides/slide2.jpg" alt=""></article>
+            <article><img class="img-responsive" src="https://thealamgroup.com/ialus/images/slides/slide-3.jpg" alt=""></article>
+          </div>
+        </div>
+      </div>
+  
+
+</section>
+</main>
+
+    </section>
+
+
+
+            <style>
+                .modal-dialog{
+                    margin-top:70px !important;
+                }
+            </style>
+
+            <!-- TEAM -->
+            <section class="blog padding-top-70 padding-bottom-70">
+                <div class="container">
+                    <!-- Heading -->
+                    <div class="heading text-center">
+                        <h4>Leadership & Governance</h4>
+                    </div>
+
+
+ <div class="team">
+                        <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                  <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Sada Cumber</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p >Sada Cumber is a Pakistani–American businessman and diplomat. He assumed his duties as Special Envoy to the Organization (OIC) on March 3, 2008, with his term ending January 20, 2009. As Special Envoy, Mr. Cumber served as the U.S. representative to the OIC, and advanced United States interests among the OIC's 57 members nations, including promoting mutual understanding and dialogue while combating intolerance, extremism and the conditions which create it.</p>
+                                </div>
+                               
+                              </div>
+                            </div>
+                          </div>
+
+                           <div class="modal fade" id="basicModal2" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                  <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Ghazanfar Hashmi</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p >Ghazanfar Hashmi is a well-known writer, author, broadcaster, and expert in public &
+                                    cultural diplomacy. He earned his doctoral degree in Public Policy from Liberty
+                                    University, Virginia, USA.He is a highly decorated scholar with multiple degrees from
+                                    universities in Pakistan and USA and as a celebrated writer, Mr. Hashmi is a multi-lingual
+                                    savant, with expertise in Public Policy, Public Diplomacy, Literature, and Mass Communication,</p>
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5GF469awO0Y" title="Ghazanfar Hashmi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+
+                               
+                              </div>
+                            </div>
+                          </div>
+
+                         
+                          
+                        <div class="row ">
+
+                            
+
+                            <!-- Member -->
+                            <div class="col-md-6 col-sm-12 no-padding">
+                                <article> <img class="img-responsive" src="images/team/t1.jpg
+" alt="" width="250px" height="250px">
+                                    <h5>Sada Cumber</h5>
+                                    <span style="color:black;">Chairman</span>
+                                    <p>Sada Cumber is a Pakistani–American businessman and diplomat. He assumed his .. </p>
+                                    <ul class="social">
+                                        <li><a href="#."><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#."><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#."><i class="fa fa-google"></i></a></li>
+                                        <li><a href="#."><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                    <a href="#" class="btn" data-toggle="modal" data-target="#basicModal" style="margin-top:1rem; color:white;">
+                                        <span class="cbp-l-loadMore-defaultText" style="color:white;">Read More<i class="fa fa-caret-right"  style="background:#333333; color:white;"></i></span>
+                                    </a>
+                                </article>
+                               
+                            </div>
+
+                            <!-- Member -->
+                            <div class="col-md-6 col-sm-12 no-padding">
+                                <article> <img class="img-responsive" src="images/team/t2.jpg
+" alt="" width="250px" height="250px">
+                                    <h5>Ghazanfar Hashmi </h5>
+                                    <span style="color:black;">President</span>
+                                    <p>Ghazanfar Hashmi is a well-known writer, author, broadcaster, and expert in public &</p>
+                                    <ul class="social">
+                                        <li><a href="#."><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#."><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#."><i class="fa fa-google"></i></a></li>
+                                        <li><a href="#."><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                    <a href="#" class="btn" data-toggle="modal" data-target="#basicModal2" style="margin-top:1rem; color:white;">
+                                        <span class="cbp-l-loadMore-defaultText" style="color:white;">Read More<i class="fa fa-caret-right" style="background:#333333; color:white;"></i></span>
+                                    </a>
+                                </article>
+                            </div>
+
+                          
+                        </div>
+                    </div>
+
+
+                     <!-- Team -->
+                     <div class="team" id="teamSec" style="margin-top:2rem;">
+                       
+                        <!-- Heading -->
+                    <div class="heading text-center">
+                        <h4>ADVISORY BOARD</h4>
+                    </div>
+
+
+                          <div class="modal fade" id="basicModal3" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                  <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Ronan O’Malley</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p >Director of Programs & Director of the Global Affairs and U.S. Foreign Policy Institute<br>
+
+                                    World Affairs Council of Greater Houston<br>
+                                    
+                                    Ronan O’Malley moved to the United States from Ireland as a child. He has an undergraduate degree in international studies and history, as well as an MBA in international business. Before joining the Council and serving as the Director of Programs & Director of the Global Affairs and U.S. Foreign Policy Institute, he worked as a real estate broker for 10 years.</p>
+                                </div>
+                               
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="modal fade" id="basicModal4" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                  <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Salman Razzaqi</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p >Salman Razzaqi is a renowned businessman and philanthropist. He is the president of Pakistan Heritage Foundation and working for the promotion of Pakistani heritage, culture and arts.</p>
+                                </div>
+                               
+                              </div>
+                            </div>
+                          </div>
+                          
+                        <div class="row blog-slide">
+
+
+                            <!-- Member -->
+                            <div class="col-md-12 no-padding">
+                                <article> <img class="img-responsive" src="images/team/Ronan-OMalley.jpg" alt="">
+                                    <h5>Ronan OMalley</h5>
+                                    <span style="color:black;">Director of Program</span>
+                                    <p>Director of Programs & Director of the Global Affairs and U.S. Foreign…</p>
+                                    <ul class="social">
+                                        <li><a href="#."><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#."><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#."><i class="fa fa-google"></i></a></li>
+                                        <li><a href="#."><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                    <a href="#" class="btn" data-toggle="modal" data-target="#basicModal3" style="margin-top:1rem; color:white;">
+                                        <span class="cbp-l-loadMore-defaultText" style="color:white;">Read More<i class="fa fa-caret-right" style="background:#333333; color:white;"></i></span>
+                                    </a>
+                                </article>
+                            </div>
+
+                            
+                              <!-- Member -->
+                             <div class="col-md-12 no-padding">
+                              <article> <button type="button"  data-toggle="modal" data-target="#exampleModal"><img class="img-responsive" src="images/team/aizaz.png" alt="" ></button> 
+                                  <h5>Aizaz Ahmad Chaudhry</h5>
+                                  <span style="color:black;">Pakistani Diplomat</span>
+                                  <p>Aizaz Ahmad Chaudhry is a senior Pakistani diplomat and Director General of Institute of… </p>
+                                  <ul class="social">
+                                      <li><a href="#."><i class="fa fa-facebook"></i></a></li>
+                                      <li><a href="#."><i class="fa fa-twitter"></i></a></li>
+                                      <li><a href="#."><i class="fa fa-google"></i></a></li>
+                                      <li><a href="#."><i class="fa fa-linkedin"></i></a></li>
+                                  </ul>
+                                  <a href="#" class="btn" data-toggle="modal" data-target="#basicModal5" style="margin-top:1rem; color:white;">
+                                      <span class="cbp-l-loadMore-defaultText" style="color:white;">Read More<i class="fa fa-caret-right"  style="background:#333333; color:white;"></i></span>
+                                  </a>
+                              </article>
+                             
+                          </div>
+                          
+                          <!-- Member -->
+                            <div class="col-md-12 no-padding">
+                                <article> <img class="img-responsive" src="images/team/salman-razzaqi.jpeg" alt="">
+                                    <h5>Salman Razzaqi</h5>
+                                    <span style="color:black;">Renowned Businessman and Philanthropist</span>
+                                    <p>Salman Razzaqi is a renowned businessman and philanthropist. He is the president…</p>
+                                    <ul class="social">
+                                        <li><a href="#."><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#."><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#."><i class="fa fa-google"></i></a></li>
+                                        <li><a href="#."><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                    <a href="#" class="btn" data-toggle="modal" data-target="#basicModal4" style="margin-top:1rem; color:white;">
+                                        <span class="cbp-l-loadMore-defaultText" style="color:white;">Read More<i class="fa fa-caret-right" style="background:#333333; color:white;"></i></span>
+                                    </a>
+                                </article>
+                            </div>
+                            
+
+                          <!-- Member -->
+                          <div class="col-md-12 no-padding">
+                              <article> <img class="img-responsive" src="images/team/akbar.png" alt="">
+                                  <h5>Dr. Akbar S. Ahmad </h5>
+                                  <span style="color:black;">Pakistani-American Academic</span>
+                                  <p>Dr. Akbar Salahuddin Ahmed, is a Pakistani-American academic, author, poet, playwright, filmmaker and former…</p>
+                                  <ul class="social">
+                                      <li><a href="#."><i class="fa fa-facebook"></i></a></li>
+                                      <li><a href="#."><i class="fa fa-twitter"></i></a></li>
+                                      <li><a href="#."><i class="fa fa-google"></i></a></li>
+                                      <li><a href="#."><i class="fa fa-linkedin"></i></a></li>
+                                  </ul>
+                                  <a href="#" class="btn" data-toggle="modal" data-target="#basicModal6" style="margin-top:1rem; color:white;">
+                                      <span class="cbp-l-loadMore-defaultText" style="color:white;">Read More<i class="fa fa-caret-right"  style="background:#333333; color:white;"></i></span>
+                                  </a>
+                              </article>
+                          </div>
+                          
+                          
+                        </div>
+                    </div>
+                                                  <center><a href="team.html" class="btn btn-1 margin-top-30 margin-right-20">More Advisory Board <i class="fa fa-caret-right"  style="background:#333333; color:white;"></i></a></center> 
+
+                </div>
+            </section>
+            
+              <script>
+
+                    
+                      const teamSec  = document.querySelector("#teamSec")
+  
+                      var modalId = [
+                        
+                        "basicModal5",
+                        "basicModal6"
+                        
+                      ]
+  
+                      var modalTitle = [
+                       
+                        "Aizaz Ahmad Chaudhry",
+                        "Dr. Akbar Salahuddin Ahmed",
+                        
+                      ]
+  
+                      var modalContent = [
+                        
+                        "Aizaz Ahmad Chaudhry",
+                        "Dr. Akbar Salahuddin Ahmed",
+                        
+  
+                      ];
+  
+  
+                      for (let i = 0; i < modalId.length; i++) {
+  
+                        teamSec.innerHTML += `
+                        <div class="modal fade" id="${modalId[i]}" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" style="z-index:999999">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                   
+                                    <h4 class="modal-title" id="myModalLabel" style="text-align: center;">${modalTitle[i]}</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p >${modalContent[i]}</p>
+                                  </div>
+  
+                                 
+                                </div>
+                              </div>
+                            </div>
+                        `;
+  
+                       
+                        if(modalTitle[i] == "Ghazanfar Hashmi"){
+                          const modalBody  = document.querySelectorAll(`#${modalId[i]} .modal-body`);
+                          modalBody[0].innerHTML += ` <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5GF469awO0Y" title="Ghazanfar Hashmi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`; 
+                        }
+                        else if(modalTitle[i] == "Dr. Akbar Salahuddin Ahmed"){
+                          const modalBody  = document.querySelectorAll(`#${modalId[i]} .modal-body`);
+                          modalBody[0].innerHTML = `<div class="text"><p><strong>Dr. Akbar Salahuddin Ahmed</strong>, is a&nbsp;<a href="https://en.wikipedia.org/wiki/Pakistani_Americans">Pakistani-American</a>&nbsp;academic, author, poet, playwright, filmmaker and former diplomat.<a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Nader362-2"><sup>[2]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-AhmedForstxiixiii-3"><sup>[3]</sup></a>&nbsp;He currently holds the Ibn Khaldun Chair of Islamic Studies and is Professor of International Relations at the&nbsp;<a href="https://en.wikipedia.org/wiki/American_University">American University</a>&nbsp;in&nbsp;<a href="https://en.wikipedia.org/wiki/Washington,_D.C.">Washington, D.C.</a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Nader362-2"><sup>[2]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-AhmedForstxiixiii-3"><sup>[3]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Watson219-4"><sup>[4]</sup></a></p><p>Immediately prior, he taught at Princeton University as served as a Visiting Professor at the&nbsp;<a href="https://en.wikipedia.org/wiki/Institute_for_Advanced_Study">Institute for Advanced Study</a>&nbsp;in&nbsp;<a href="https://en.wikipedia.org/wiki/Princeton,_New_Jersey">Princeton</a>.<a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Nader362-2"><sup>[2]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-AhmedForstxiixiii-3"><sup>[3]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Bennett31-5"><sup>[5]</sup></a>&nbsp;He also taught at Harvard University and was a Visiting Scholar at the Department of Anthropology.<a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Bennett31-5"><sup>[5]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-AhmedHart331-6"><sup>[6]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Peabody3-7"><sup>[7]</sup></a>&nbsp;Ahmed was the First Chair of Middle East and Islamic Studies at the US Naval Academy,&nbsp;<a href="https://en.wikipedia.org/wiki/Annapolis">Annapolis</a>, and a Nonresident Senior Fellow at the&nbsp;<a href="https://en.wikipedia.org/wiki/Brookings_Institution">Brookings Institution</a>.<a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Nader362-2"><sup>[2]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Bennett31-5"><sup>[5]</sup></a>&nbsp;In 2004 Ahmed was named&nbsp;<a href="https://en.wikipedia.org/wiki/District_of_Columbia">District of Columbia</a>&nbsp;Professor of the Year by the&nbsp;<a href="https://en.wikipedia.org/wiki/Carnegie_Foundation_for_the_Advancement_of_Teaching">Carnegie Foundation for the Advancement of Teaching</a>&nbsp;and the&nbsp;<a href="https://en.wikipedia.org/wiki/Council_for_Advancement_and_Support_of_Education">Council for Advancement and Support of Education</a>.<a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-AhmedForstxiixiii-3"><sup>[3]</sup></a>&nbsp;A former Pakistani High Commissioner to the UK and Ireland, Ahmed was a member of the&nbsp;<a href="https://en.wikipedia.org/wiki/Civil_Service_of_Pakistan">Civil Service of Pakistan</a>&nbsp;and served as Political Agent in&nbsp;<a href="https://en.wikipedia.org/wiki/South_Waziristan_Agency">South Waziristan Agency</a>&nbsp;and Commissioner in&nbsp;<a href="https://en.wikipedia.org/wiki/Baluchistan">Baluchistan</a>.<a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Nader362-2"><sup>[2]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Ahmede133-8"><sup>[8]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Bennett31-5"><sup>[5]</sup></a>&nbsp;He also served as the Iqbal Fellow (Chair of Pakistan Studies) at the&nbsp;<a href="https://en.wikipedia.org/wiki/University_of_Cambridge">University of Cambridge</a>.<a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Nader362-2"><sup>[2]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Ahmede133-8"><sup>[8]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Bennett31-5"><sup>[5]</sup></a>&nbsp;An&nbsp;<a href="https://en.wikipedia.org/wiki/Anthropologist">anthropologist</a>&nbsp;and scholar of Islam. He completed his MA at Cambridge University and received his PhD from the&nbsp;<a href="https://en.wikipedia.org/wiki/School_of_Oriental_and_African_Studies">School of Oriental and African Studies</a>&nbsp;in&nbsp;<a href="https://en.wikipedia.org/wiki/London">London</a>.<a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Nader362-2"><sup>[2]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Bennett31-5"><sup>[5]</sup></a>&nbsp;He has been called “the world’s leading authority on contemporary Islam” by the&nbsp;<a href="https://en.wikipedia.org/wiki/BBC">BBC</a>.<a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Ahmede133-8"><sup>[8]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-9"><sup>[9]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-10"><sup>[10]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-11"><sup>[11]</sup></a></p><p>Ahmed received the&nbsp;<a href="https://en.wikipedia.org/wiki/Tamgha-i-Imtiaz">Tamgha-i-Imtiaz</a>&nbsp;(Medal of Excellence) and&nbsp;<a href="https://en.wikipedia.org/wiki/Sitara-i-Imtiaz">Sitara-i-Imtiaz</a>&nbsp;(Star of Excellence) from the Pakistani government for academic distinction and the&nbsp;<a href="https://en.wikipedia.org/wiki/Sir_Percy_Sykes_Memorial_Medal">Sir Percy Sykes Memorial Medal</a>&nbsp;by the&nbsp;<a href="https://en.wikipedia.org/wiki/Royal_Society_for_Asian_Affairs">Royal Society for Asian Affairs</a>&nbsp;in London.<a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-AhmedForstxiixiii-3"><sup>[3]</sup></a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-WignarajaHussain359-12"><sup>[12]</sup></a>&nbsp;He was also awarded the inaugural&nbsp;<a href="https://en.wikipedia.org/wiki/Purpose_Prize">Purpose Prize</a>&nbsp;in 2006 alongside&nbsp;<a href="https://en.wikipedia.org/wiki/Judea_Pearl">Judea Pearl</a><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-Ahmede133-8"><sup>[8]</sup></a>&nbsp;and is frequently named in the annual book,&nbsp;<em>The Muslim 500: The World’s 500 Most Influential Muslims,</em><a href="https://en.wikipedia.org/wiki/Akbar_Ahmed#cite_note-13"><sup>[13]</sup></a>&nbsp;and was named a 2015 Global Thought Leader by&nbsp;<em>The World Post</em>&nbsp;and the&nbsp;<a href="https://en.wikipedia.org/wiki/Gottlieb_Duttweiler_Institute">Gottlieb Duttweiler Institute</a>.</p>
+                                                    </div>`;
+                        }
+
+                        else if(modalTitle[i] == "Aizaz Ahmad Chaudhry"){
+                          const modalBody  = document.querySelectorAll(`#${modalId[i]} .modal-body`);
+                          modalBody[0].innerHTML =`<div class="text">
+							<p>Aizaz Ahmad Chaudhry&nbsp;is a senior Pakistani diplomat and Director General of&nbsp;<a href="https://en.wikipedia.org/wiki/Institute_of_Strategic_Studies_Islamabad">Institute of Strategic Studies Islamabad</a>. He served as the Ambassador of Pakistan to the United States. Previously, he served as the&nbsp;<a href="https://en.wikipedia.org/wiki/Foreign_Secretary_(Pakistan)">Foreign Secretary</a>&nbsp;of&nbsp;<a href="https://en.wikipedia.org/wiki/Pakistan">Pakistan</a>, as the Pakistan’s Ambassador to the Netherlands and the spokesperson of the&nbsp;<a href="https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Pakistan)">Foreign Office</a>.</p>
+<p>Choudhry joined the&nbsp;<a href="https://en.wikipedia.org/wiki/Foreign_Service_of_Pakistan">Foreign Service of Pakistan</a>&nbsp;in 1980. During his 34 years service, he worked on various assignments at home and abroad.</p>
+<p>He remained&nbsp;<a href="https://en.wikipedia.org/wiki/Ambassador">Ambassador</a>&nbsp;of&nbsp;<a href="https://en.wikipedia.org/wiki/Pakistan">Pakistan</a>&nbsp;to the Netherlands from 2009 to 2012.<a href="https://en.wikipedia.org/wiki/Aizaz_Ahmad_Chaudhry#cite_note-dawn/15feb2017-7"><sup>[7]</sup></a><a href="https://en.wikipedia.org/wiki/Aizaz_Ahmad_Chaudhry#cite_note-geo/15feb2017-3"><sup>[3]</sup></a><a href="https://en.wikipedia.org/wiki/Aizaz_Ahmad_Chaudhry#cite_note-nation/18jan2017-8"><sup>[8]</sup></a></p>
+<p>His other assignments are:</p>
+<ul>
+<li>Represented&nbsp;<a href="https://en.wikipedia.org/wiki/Permanent_Representative_of_Pakistan_to_the_United_Nations">Pakistan in the United Nations</a>for over six years.<a href="https://en.wikipedia.org/wiki/Aizaz_Ahmad_Chaudhry#cite_note-nation/18jan2017-8"><sup>[8]</sup></a></li>
+<li>As Pakistan’s Deputy Permanent Representative to the UN in New York.<a href="https://en.wikipedia.org/wiki/Aizaz_Ahmad_Chaudhry#cite_note-dawn/15feb2017-7"><sup>[7]</sup></a></li>
+<li>Served as Political Counsellor in&nbsp;<a href="https://en.wikipedia.org/wiki/Embassy_of_Pakistan,_Washington,_D.C.">Embassy of Pakistan, Washington, D.C.</a>(1999-2000).<a href="https://en.wikipedia.org/wiki/Aizaz_Ahmad_Chaudhry#cite_note-nation/18jan2017-8"><sup>[8]</sup></a></li>
+<li>Served as Third/Second Secretary Pakistan Embassy in&nbsp;<a href="https://en.wikipedia.org/wiki/Doha">Doha</a>(1984–87).<sup>[</sup><a href="https://en.wikipedia.org/wiki/Wikipedia:Citation_needed"><em><sup>citation needed</sup></em></a><sup>]</sup></li>
+<li>Served as additional foreign secretary of UN and disarmament affairs.<a href="https://en.wikipedia.org/wiki/Aizaz_Ahmad_Chaudhry#cite_note-dawn/15feb2017-7"><sup>[7]</sup></a></li>
+<li>Served as the director general of relations with South Asian countries.<a href="https://en.wikipedia.org/wiki/Aizaz_Ahmad_Chaudhry#cite_note-dawn/15feb2017-7"><sup>[7]</sup></a></li>
+</ul>
+<p>He served as the spokesperson of the foreign ministry of Pakistan<a href="https://en.wikipedia.org/wiki/Aizaz_Ahmad_Chaudhry#cite_note-tribune/15feb2017-1"><sup>[1]</sup></a><a href="https://en.wikipedia.org/wiki/Aizaz_Ahmad_Chaudhry#cite_note-geo/15feb2017-3"><sup>[3]</sup></a><a href="https://en.wikipedia.org/wiki/Aizaz_Ahmad_Chaudhry#cite_note-dawn/15feb2017-7"><sup>[7]</sup></a>&nbsp;from March 2013<a href="https://en.wikipedia.org/wiki/Aizaz_Ahmad_Chaudhry#cite_note-9"><sup>[9]</sup></a>&nbsp;until December 2013</p>
+                            <div class="clearfix"></div>
+                                                    </div>`;
+                       
+                        
+                      }
+                    
+                     
+                  }
+  
+                    </script>
+  
+                  
+
+            <!-- Features -->
+            <section class="features light-gray-bg padding-top-70 padding-bottom-70">
+                <div class="container">
+                    <!-- Heading -->
+                    <div class="heading text-center">
+                        <h4>Get Involved</h4>
+                    </div>
+
+
+                    <div class="wrapper-form">
+                        <div class="title-text">
+                          <div class="title login">Donate</div>
+                          <div class="title signup">Become a Volunteer </div>
+                        </div>
+                        
+                  
+                      <div class="form-container">
+                        <div class="slide-controls">
+                          <input type="radio" name="slider" id="login" checked>
+                          <input type="radio" name="slider" id="signup">
+                          <label for="login" class="slide text-login">Donate</label>
+                          <label for="signup" class="slide text-signup">Become a Volunteer </label>
+                          <div class="slide-tab"></div>
+                        </div>
+                          
+                    
+                          <div class="form-inner">
+                            <form  class="login" method="POST">
+                                <h3 style="text-align: center;
+                                word-spacing: 5px;
+                                letter-spacing: 3px;
+                                font-weight: 100;">To Make Big Difference
+                                </h3>
+                              <div class="field">
+                                <input id="uname" type="text" maxlength="22" required>
+                                <label>Your Name</label>
+                              </div>
+                              <div class="field">
+                                <input id="email1" type="email"  required>
+                                <label>Your Email</label>
+                              </div>
+                              <div class="field">
+                                <input id="phone1" type="text" maxlength="22" required>
+                                <label>Your Phone Number</label>
+                              </div>
+                              <div class="field">
+                                <input id="country1" type="text" maxlength="22" required>
+                                <label>Your Country</label>
+                              </div>
+                              <div class="field">
+                                <input id="city1" type="text" maxlength="22" required>
+                                <label>Your City</label>
+                              </div>
+                             
+                              <div class="field">
+                                <input class="btn-form-login" type="submit" value="SUBMIT NOW">
+                              </div>
+                            </form>
+                    
+                    
+                            <form action="#" class="signup">
+                                <h3 style="text-align: center;
+                                word-spacing: 5px;
+                                letter-spacing: 3px;
+                                font-weight: 100;">For Noble Cause
+                                </h3>
+                              <div class="field">
+                                <input id="uname" type="text" maxlength="22" required>
+                                <label>Your Name</label>
+                              </div>
+                              <div class="field">
+                                <input id="email1" type="email"  required>
+                                <label>Your Email</label>
+                              </div>
+                              <div class="field">
+                                <input id="phone1" type="text" maxlength="22" required>
+                                <label>Your Phone Number</label>
+                              </div>
+                              <div class="field">
+                                <input id="country1" type="text" maxlength="22" required>
+                                <label>Your Country</label>
+                              </div>
+                              <div class="field">
+                                <input id="city1" type="text" maxlength="22" required>
+                                <label>Your City</label>
+                              </div>
+                             
+                              <div class="field">
+                                <input class="btn-form-login" type="submit" value="SUBMIT NOW">
+                              </div>
+                            </form>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    
+                    
+                    <div id="modalContainer">
+                      <div class="modal-content">
+                        <i class="bi bi-exclamation-circle-fill"></i>
+                        <p class="paragraf">
+                          The information entered is incorrect
+                        </p>
+                        </div>
+                    </div>
+                    
+                    <img class="mooj" src="https://iili.io/HXsukuV.png">
+                </div>
+            </section>
+
+          
+          <style>
+          @media screen and (min-width:768px){
+               .clients-row{
+                   display:flex;
+                   justify-content:center;
+               }
+          }
+             
+          </style>
+            <!-- Counter -->
+            <section class="clients padding-top-100 padding-bottom-100">
+                <div class="container">
+
+                    <!-- Heading -->
+                    <div class="heading text-center">
+                        <h4>Our Great Partners</h4>
+                        <span style="color:black;">We trust in longlasting partnerships with the most important brands on the market</span> </div>
+
+                    <!-- Clients -->
+                    <div class="single-slide">
+                        <div class="item">
+                            <ul class="row col-5 clients-row">
+                                
+                                <li><a href="#."><img class="img-responsive" src="images/6.png" alt=""></a></li>
+                                 <li><a href="#."><img class="img-responsive" src="images/2.png" alt=""></a></li>
+                                <li><a href="#."><img class="img-responsive" src="images/1.jpg" alt=""></a></li>
+                                <li><a href="#."><img class="img-responsive" src="images/7.png" alt=""></a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <ul class="row col-5 clients-row">
+                                
+                                
+                                 <li><a href="#."><img class="img-responsive" src="images/8.png" alt=""></a></li>
+                                <li><a href="#."><img class="img-responsive" src="images/3.png" alt=""></a></li>
+                                <li><a href="#."><img class="img-responsive" src="images/5.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- FOOTER -->
+        <footer id="main-footer">
+            
+        </footer>
+
+        <!-- RIGHTS -->
+        <div class="rights" id="main-rights">
+            
+        </div>
+
+       
+    </div>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/own-menu.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.cubeportfolio.min.js"></script>
+    <script src="js/jquery.colio.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    
+    
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.querySelector(".carousel-events");
+  const slides = Array.from(document.querySelectorAll(".slide-home"));
+  let currentSlide = 0;
+  let isDragging = false;
+  let startPosX = 0;
+  let currentTranslate = 0;
+  let prevTranslate = 0;
+  let animationInterval;
+
+  carousel.addEventListener("mousedown", dragStart);
+  carousel.addEventListener("touchstart", dragStart);
+  carousel.addEventListener("mousemove", drag);
+  carousel.addEventListener("touchmove", drag);
+
+  function dragStart(event) {
+    if (event.type === "touchstart") {
+      startPosX = event.touches[0].clientX;
+    } else {
+      startPosX = event.clientX;
+      event.preventDefault();
+    }
+
+    isDragging = true;
+    clearInterval(animationInterval);
+  }
+
+  function drag(event) {
+    if (isDragging) {
+      let currentPositionX;
+      if (event.type === "touchmove") {
+        currentPositionX = event.touches[0].clientX;
+      } else {
+        currentPositionX = event.clientX;
+      }
+      const diffX = currentPositionX - startPosX;
+      currentTranslate = prevTranslate + diffX;
+
+      carousel.style.transform = `translateX(${currentTranslate}px)`;
+    }
+  }
+
+  function checkSlideBoundary() {
+    const slideWidth = slides[0].offsetWidth;
+    const slideIndex = Math.round(-currentTranslate / slideWidth);
+    currentSlide = Math.max(0, Math.min(slideIndex, slides.length - 1));
+    currentTranslate = -currentSlide * slideWidth;
+    carousel.style.transform = `translateX(${currentTranslate}px)`;
+  }
+
+  function startAutoSlide() {
+    clearInterval(animationInterval);
+    animationInterval = setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      currentTranslate = -currentSlide * slides[0].offsetWidth;
+      carousel.style.transform = `translateX(${currentTranslate}px)`;
+    }, 2000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(animationInterval);
+  }
+
+  carousel.addEventListener("mouseup", function () {
+    isDragging = false;
+    prevTranslate = currentTranslate;
+    checkSlideBoundary();
+    startAutoSlide();
+  });
+
+  carousel.addEventListener("mouseleave", function () {
+    isDragging = false;
+    prevTranslate = currentTranslate;
+    checkSlideBoundary();
+    startAutoSlide();
+  });
+
+  startAutoSlide();
+  carousel.addEventListener("transitionend", checkSlideBoundary);
+});
+
+
+
+</script>  
+
+<script src="js/homeform.js"></script>
+
+</body>
+
+</html>

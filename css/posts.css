@@ -1,0 +1,33 @@
+:root:not([data-theme=dark]), [data-theme=light] {
+  --primary: #43a047;
+}
+
+.logo {
+  background-color: var(--muted-border-color);
+}
+
+hr {
+  margin: 40px 0;
+}
+
+.grid {
+  align-items: center;
+}
+
+article {
+  margin-bottom: 0;
+}
+
+p a::after {
+  font-family: "FontAwesome";
+  font-size: 12px;
+  margin-left: 4px;
+  text-decoration: none;
+  vertical-align: top;
+}
+p a[href*=".pdf"]::after, p a[href*=".doc"]::after {
+  content: "\f15b";
+}
+p a[href^=http]::after {
+  content: "\f14c";
+}/*# sourceMappingURL=posts.css.map */

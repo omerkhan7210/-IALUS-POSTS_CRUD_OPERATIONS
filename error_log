@@ -1,0 +1,35 @@
+[08-Jun-2023 18:49:49 UTC] PHP Notice:  Undefined index: uname in /home/noorular/public_html/ialus/send_email.php on line 10
+[08-Jun-2023 18:49:49 UTC] PHP Notice:  Undefined index: email1 in /home/noorular/public_html/ialus/send_email.php on line 11
+[08-Jun-2023 18:49:49 UTC] PHP Notice:  Undefined index: phone1 in /home/noorular/public_html/ialus/send_email.php on line 12
+[08-Jun-2023 18:49:49 UTC] PHP Notice:  Undefined index: country1 in /home/noorular/public_html/ialus/send_email.php on line 13
+[08-Jun-2023 18:49:49 UTC] PHP Notice:  Undefined index: city1 in /home/noorular/public_html/ialus/send_email.php on line 14
+[08-Jun-2023 18:49:49 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\src\PHPMailer' not found in /home/noorular/public_html/ialus/send_email.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/noorular/public_html/ialus/send_email.php on line 24
+[10-Jun-2023 14:53:41 UTC] PHP Notice:  Undefined variable: conn in /home/noorular/public_html/ialus/events.php on line 4
+[10-Jun-2023 14:53:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/noorular/public_html/ialus/events.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/noorular/public_html/ialus/events.php on line 4
+[10-Jun-2023 14:53:45 UTC] PHP Notice:  Undefined variable: conn in /home/noorular/public_html/ialus/events.php on line 4
+[10-Jun-2023 14:53:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/noorular/public_html/ialus/events.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/noorular/public_html/ialus/events.php on line 4
+[10-Jun-2023 14:54:14 UTC] PHP Notice:  Undefined variable: conn in /home/noorular/public_html/ialus/events.php on line 4
+[10-Jun-2023 14:54:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/noorular/public_html/ialus/events.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/noorular/public_html/ialus/events.php on line 4
+[10-Jun-2023 14:54:15 UTC] PHP Notice:  Undefined variable: conn in /home/noorular/public_html/ialus/events.php on line 4
+[10-Jun-2023 14:54:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/noorular/public_html/ialus/events.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/noorular/public_html/ialus/events.php on line 4
+[10-Jun-2023 14:54:16 UTC] PHP Notice:  Undefined variable: conn in /home/noorular/public_html/ialus/events.php on line 4
+[10-Jun-2023 14:54:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/noorular/public_html/ialus/events.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/noorular/public_html/ialus/events.php on line 4
+[10-Jun-2023 14:55:31 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/noorular/public_html/ialus/events.php on line 21
